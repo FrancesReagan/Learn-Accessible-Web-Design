@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+        
+        <!-- Fonts & Icons -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body class="contact-page">
+        <main id="main">
+            <div class="header">
+                <h2 class="contact-form-heading">Sign up</h2>
+                <a href="#main" id="homeLink">Back to home page</a>
+            </div>
+            <!-- Form section -->
+            <section class="contact-form-section">
+                <form>
+                    <p class="contact-form-intro">Enter your contact information, and then there will be a showing of Romeo and Juliet</p>
+                    <label for="name">Full name</label>
+                    <input class="contact-input" id="name" type="text" placeholder="William Shakespeare" />
+                    <label for="address">Address</label>
+                    <input class="contact-input" id="address" type="text" placeholder="at the Globe Theater Main dirt road" />
+                    <div class="address">
+                        <div class="city">
+                            <label for="city">City</label>
+                            <select class="city-select" id="city" type="text" placeholder="London">
+                                <option value="london">London</option>
+                                <option value="manchester">Manchester</option>
+                                <option value="leeds">Leeds</option>
+                            </select>
+                        </div>
+                        <div class="postcode">
+                            <label for="postcode">Postcode</label>
+                            <input class="address-input" id="postcode" type="text" placeholder="Nearest Grassy Knoll" />
+                        </div>
+                    </div>
+                    <label for="email">Email</label>
+                    <input class="contact-input" id="email" type="text" placeholder="willturningoverinhisgrave@gmail.com" />
+                    <fieldset class="radio-container">
+                      <legend>Do you have dogs?</legend>
+                        <label for="yes">Yes</label>
+                        <input class="contact-radio" id="yes" type="radio" name="dogs" />
+                        <label for="no">No</label>
+                        <input id="homeLink" class="contact-radio" id="no" type="radio" name="dogs" />
+                    </div>
+                    <button class="contact-submit-button" id="submitButton" type="button" onclick="sendMessage()" aria-controls="submitMessage">Send message 🎉</button>
+                </form>
+                <img class="contact-image" src="images/drone-contact.png" alt="drawn image of a brown-haired woman with a blue slouchy hat seeing a blue drone approaching." />
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
